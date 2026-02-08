@@ -1,4 +1,4 @@
-package com.pmenendez.controller;
+package com.bookamania.controller;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

@@ -1,4 +1,4 @@
-package com.pmenendez.controller;
+package com.bookamania.controller;
 
 import static java.util.Collections.singletonList;
 import static org.mockito.Mockito.doNothing;
@@ -14,8 +14,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pmenendez.model.Product;
-import com.pmenendez.service.ProductService;
+import com.bookamania.model.Product;
+import com.bookamania.service.ProductService;
 import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

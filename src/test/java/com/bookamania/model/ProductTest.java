@@ -1,4 +1,4 @@
-package com.pmenendez.model;
+package com.bookamania.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

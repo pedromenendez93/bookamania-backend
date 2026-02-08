@@ -1,4 +1,4 @@
-package com.pmenendez;
+package com.bookamania;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

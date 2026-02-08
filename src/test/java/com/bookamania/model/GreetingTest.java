@@ -1,4 +1,4 @@
-package com.pmenendez.model;
+package com.bookamania.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package com.pmenendez.service;
+package com.bookamania.service;
 
 import static java.util.Collections.singletonList;
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,8 +7,8 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.pmenendez.model.Product;
-import com.pmenendez.repository.ProductRepository;
+import com.bookamania.model.Product;
+import com.bookamania.repository.ProductRepository;
 import java.util.List;
 import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
