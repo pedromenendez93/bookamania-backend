@@ -15,11 +15,12 @@ public class Show {
 
     private final ShowId id;
     private final LocalDate date;
-    private Map<MatchId, Match> matches = new HashMap<>();
+    private final Map<MatchId, Match> matches;
 
     private Show(ShowId id, LocalDate date) {
         this.id = id;
         this.date = date;
+        this.matches = new HashMap<>();
     }
 
     public static Show schedule(LocalDate date) {
