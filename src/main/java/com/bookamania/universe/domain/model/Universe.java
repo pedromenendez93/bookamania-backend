@@ -5,6 +5,8 @@ import com.bookamania.universe.domain.model.valueobject.MatchId;
 import com.bookamania.universe.domain.model.valueobject.ShowId;
 import com.bookamania.universe.domain.model.valueobject.SuperstarId;
 import com.bookamania.universe.domain.model.valueobject.UniverseId;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -12,15 +14,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+@Getter
+@AllArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public class Universe {
 
     private final UniverseId id;
     private final String name;
-    private Map<ShowId, Show> shows = new HashMap<>();
+    private final Map<ShowId, Show> shows;
 
     public Universe(UniverseId id, String name) {
         this.id = id;
         this.name = name;
+        this.shows = new HashMap<>();
     }
 
     public ShowId scheduleShow(LocalDate date) {

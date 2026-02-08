@@ -20,7 +20,7 @@ public class MatchId {
         return new MatchId(value);
     }
 
-    private UUID getValue() {
+    public UUID getValue() {
         return value;
     }
 }

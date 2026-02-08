@@ -4,9 +4,14 @@ import com.bookamania.universe.domain.exception.MatchAlreadyFinishedException;
 import com.bookamania.universe.domain.exception.MatchNumberOfParticipantsException;
 import com.bookamania.universe.domain.model.valueobject.MatchId;
 import com.bookamania.universe.domain.model.valueobject.SuperstarId;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 
 import java.util.List;
 
+@Getter
+@AllArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public class Match {
 
     private final MatchId id;
@@ -18,6 +23,10 @@ public class Match {
         this.id = id;
         this.order = order;
         this.participants = participants;
+    }
+
+    public static Match rehydrate(MatchId id, int order, List<SuperstarId> participants, MatchResult result) {
+        return new Match(id, order, participants, result);
     }
 
     public static Match create(int order, List<SuperstarId> participants) {
@@ -32,10 +41,6 @@ public class Match {
             throw new MatchAlreadyFinishedException("Match is already finished");
         }
         this.result = result;
-    }
-
-    public MatchId getId() {
-        return id;
     }
 
 }

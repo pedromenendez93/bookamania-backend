@@ -20,7 +20,7 @@ public class ShowId {
         return new ShowId(value);
     }
 
-    private UUID getValue() {
+    public UUID getValue() {
         return value;
     }
 }
